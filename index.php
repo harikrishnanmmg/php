@@ -2,6 +2,7 @@
 
 <head>
 <title>Hello World!</title>
+<title>Welcome to EX280 Lab room</title>
 </head>
 
 <body>

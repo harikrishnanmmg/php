@@ -251,7 +251,7 @@ objects:
     - name: "${GOGS_VERSION}"
       from:
         kind: DockerImage
-        name: docker.io/openshiftdemos/gogs:${GOGS_VERSION}
+        name: 172.30.1.1:5000/openshiftdemos/:${GOGS_VERSION}
       importPolicy: {}
       annotations:
         description: The Gogs git server docker image
@@ -299,6 +299,7 @@ parameters:
   value: gogs
 - description: 'Custom hostname for http service route.  Leave blank for default hostname, e.g.: <application-name>-<project>.<default-domain-suffix>'
   name: HOSTNAME
+  value: gogs.172.105.41.154.nip.io
   required: true
 - displayName: Database Username
   from: gogs
@@ -323,11 +324,11 @@ parameters:
   value: 12MB
 - displayName: Database version (PostgreSQL)
   name: DATABASE_VERSION
-  value: "9.5"
+  value: "9.2"
 - name: GOGS_VERSION
   displayName: Gogs Version
-  description: 'Version of the Gogs container image to be used (check the available version https://hub.docker.com/r/openshiftdemos/gogs/tags)'
-  value: "0.11.34"
+  description: 'Version of the Gogs container image to be used'
+  value: "0.9.97"
   required: true
 - name: INSTALL_LOCK
   displayName: Installation lock

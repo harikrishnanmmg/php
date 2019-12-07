@@ -6,7 +6,7 @@
 
 <body>
 
-<?php echo "Therikka vidalayama VERSION 5.O -- Sakthi Rama!.."; ?>
+<?php echo "EX280 exam!.."; ?>
 <?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?><br /><br />
 
 <?php $links = [];
